@@ -1,0 +1,7 @@
+[
+  { "id": 1, "word": "pirateofthecaribbean", "category":"Adventure Movie", "hint":"Jack Sparrow" },
+  { "id": 2, "word": "cristianoronaldo", "category":"Football Player", "hint":"Real Madrid" },
+  { "id": 3, "word": "terminator", "category":"Action Movie", "hint":"I will be back" },
+  { "id": 4, "word": "newyork", "category":"City", "hint":"Big Apple" },
+  { "id": 5, "word": "michaeljackson", "category":"Singer", "hint":"King of Pop" }
+]
