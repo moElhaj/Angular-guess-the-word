@@ -1,0 +1,67 @@
+
+<div *ngIf="gameOver">
+  <div class="space">
+    <h1>
+      Game Over
+    </h1>
+  </div>
+  
+  <div class="space">
+      <p>Result {{score}}/{{words.length}}</p>
+  </div>
+  
+  <div class="space">
+    <button type="button" class="btn btn-warning" (click)="newGame()">Play Again</button>
+  </div>
+</div>
+
+
+<div *ngIf="!gameOver">
+
+  <div *ngIf="!word" class="space">
+    <h3>
+      Try to guess the word, arrange the letters and fill in the blanks to find the word.
+    </h3>
+    <br>
+    <h1 class="clickable">
+      <a (click)="start()">Start</a>
+    </h1>
+  </div>
+   
+
+  <div *ngIf="word">
+    <h1>Category: {{word.category}}</h1>
+    <p>Hint: {{word.hint}}</p>
+
+    <div class="space">
+      <span *ngFor="let chance of numbers" style="color: red;">
+        <i class="material-icons">favorite</i>
+      </span>
+    </div>
+
+    <div class="space">
+      <span *ngFor="let letter of letters; let i = index">
+        <input id="cont{{i}}" type="text" />
+      </span>
+    </div>
+
+    <div class="space">
+      <span *ngFor="let letterto of letterToGuess let i = index">
+        <button id="btn{{i}}" type="button" class="btn btn-light"  (click)="guess(letterto, i)" >{{letterto}}</button>
+      </span>
+    </div>
+
+    <div class="space">
+      <p>Result {{score}}/{{words.length}}</p>
+    </div>
+
+    <div class="space">
+      <button type="button" class="btn btn-danger" (click)="clear()">Skip</button>
+    </div>
+
+  </div>
+</div>
+
+
+
+

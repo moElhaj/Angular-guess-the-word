@@ -1,0 +1,29 @@
+.clickable {
+    cursor: pointer;
+}
+
+.col {
+    width: 30px !important;
+    max-width: 30px !important;
+    min-height: 1px !important;
+    padding-right: 2px !important;
+    padding-left: 2px !important;
+}
+
+.btn-warning{
+    color : #fff !important;
+}
+
+input {
+    width: 30px;
+    margin: 0 3px;
+    text-align: center; 
+}
+
+.btn {
+    margin:3px;
+}
+
+.space {
+    margin:5px;
+}
