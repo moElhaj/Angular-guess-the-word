@@ -1,18 +1,85 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,700");
+:root {
+    --white: #FFFFFF;
+    --black: #1D1D1D;
+	--yellow: #ffad2a;
+	--dark-yellow: #e48e04;
+    --red: #ED295B;
+    --green: #52d138;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none !important;
+}
 
 body {
-	background: #2E9CE6;
-	font-family: 'Raleway','Arial';	
-	margin: 0;
-	color: #fff;
+	background: var(--dark-yellow);
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 18px;
+}
+
+@media (max-width:768px) {
+    body {
+        background: var(--yellow);
+    }
+}
+
+button {
+    background: black;
+    border: none;
+    color: white;
+    font: inherit;
+    padding: .5rem .7rem;
+    cursor: pointer;
+    margin: .2rem;
+}
+
+h1 {
+	font-weight: 500;
 }
 
 .wrapper {
-	margin-top: 150px;
+    min-height: 100vh;
 }
 
 
-a {
-	text-decoration: none;
-	color: #fff;
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 }
+
+.spacer {
+    flex-grow: 1;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.h-center {
+    justify-content: center;
+}
+
+.v-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+.w-100 {
+	width: 100%;
+}
+
