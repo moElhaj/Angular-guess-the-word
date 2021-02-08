@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: '<div class="wrapper" style="text-align:center"><router-outlet></router-outlet></div>',
+  template: '<div class="wrapper flex flex-column center h-100 w-100"><router-outlet></router-outlet></div>',
 })
 export class AppComponent {
 }
+
